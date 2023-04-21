@@ -11,6 +11,8 @@ const Formulario = (props) => {
     const [foto,actualizarFoto] = useState("");
     const [equipo,actualizarEquipo] = useState("");
 
+    const { registrarColaborador } = props
+
 
     const manejarEnvio = (e) => {
         // preventDefault: Cancela el evento si este es cancelable, sin detener 
@@ -23,7 +25,7 @@ const Formulario = (props) => {
             foto: foto,
             equipo: equipo
         }
-        console.log(datosAenviar);
+        registrarColaborador(datosAenviar);
     }
 
     return <section className="formulario">
