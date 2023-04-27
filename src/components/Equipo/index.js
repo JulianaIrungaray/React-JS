@@ -11,19 +11,23 @@ const Equipo = (props) => {
 
     const estilotitulo = {borderColor: colorPrimario}
 
-    return <section className = "equipo" style={obj}>
-        <h3 style={estilotitulo} >{titulo}</h3>
-        <div className="colaboradores">
-            {
-                colaboradores.map((colaborador, index) => {
-                    return <Colaborador 
-                        datos={colaborador} 
-                        key={index}
-                    />;
-                })
-            }
-        </div>
-    </section>
+    return <>
+        { colaboradores.length > 0 &&
+            <section className = "equipo" style={obj}>
+                <h3 style={estilotitulo} >{titulo}</h3>
+                <div className="colaboradores">
+                    {
+                        colaboradores.map((colaborador, index) => {
+                            return <Colaborador 
+                                datos={colaborador} 
+                                key={index}
+                                colorPrimario={colorPrimario}
+                            />;
+                        })
+                    }
+                </div>
+            </section>
+        }</>
 }
 
 export default Equipo;
