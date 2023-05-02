@@ -14,5 +14,11 @@
 
 .redes img{
     padding: 0px 15px;
+    width: 2rem;
+    filter: invert(1);
 }
+
+
+
+
 

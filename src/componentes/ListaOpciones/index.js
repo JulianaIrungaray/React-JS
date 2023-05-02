@@ -21,4 +21,4 @@ const ListaOpciones = (props) => {
     </div>
 }
 
-export default ListaOpciones;
+export default ListaOpciones

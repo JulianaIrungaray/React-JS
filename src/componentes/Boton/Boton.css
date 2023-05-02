@@ -1,11 +1,11 @@
-.boton {
+.boton{
     background-color: #6278F7;
     border-radius: 10px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     padding: 24px 32px;
     border: none;
-    color: #fff;
+    color: #ffffff;
     margin: 32px 0;
     cursor: pointer;
 }
